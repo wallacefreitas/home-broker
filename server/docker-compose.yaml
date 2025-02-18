@@ -1,6 +1,6 @@
 services:
   mongo:
-    image: mongo:8.0.3
+    build: ./.docker/mongodb
     environment:
       - MONGO_INITDB_ROOT_USERNAME=root
       - MONGO_INITDB_ROOT_PASSWORD=root
